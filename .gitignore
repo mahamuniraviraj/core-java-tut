@@ -26,6 +26,13 @@ RemoteSystemsTempFiles/
 Servers/
 
 
+*/target/**
+
+*/.classpath
+*/.project
+*/.settings
+*/.idea
+
 # Created by https://www.gitignore.io/api/git,java,linux,eclipse
 
 ### Eclipse ###
