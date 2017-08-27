@@ -21,6 +21,9 @@
  */
 package com.raviraj.java;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
@@ -48,6 +51,41 @@ public class Main {
 		String input = scanner.nextLine();
 
 		System.out.println(" Input :: " + input);
+
+
+        //Another way to scan
+
+        BufferedReader reader = null;
+
+        try {
+            reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Enter some text to input and press enter :::: ");
+
+            String input1 = reader.readLine();
+
+            System.out.println(" Input :: " + input);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
+        //Another way to scan
+
+        System.out.println("Enter another text to scan and press enter ::");
+
+//		String input2 = System.console().readLine();
+
+//		System.out.println(" Another input :: "+input2);
+
 
 		scanner.close();
 
