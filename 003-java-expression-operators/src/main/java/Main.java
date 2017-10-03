@@ -18,7 +18,7 @@ public class Main {
 
         demoWhileLoop();
 
-        demoDoWhileLoop();
+        demoDoWhileLoop(); 
     }
 
     /**
